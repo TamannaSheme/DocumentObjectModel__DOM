@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title> New Document </title>
+    <meta name="Author" content="">
+    <!-- writw a program to check weather the bank account have a sufficient ballence or not -->
+    <script type="text/javascript" language="javascript">
+        function bankValidation() {
+            var acc = document.myBank.accNum;
+            var acc_len = acc.value.length;
+
+            if (acc_len == 0)
+                alert("Account Number Field Is Empty!");
+            if (acc === 123456)
+                alert("Your Balance is 1000000");
+            else
+                alert("Not an account Number!");
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myBank" onSubmit="bankValidation()" method="post">
+        <table class=table1 bgcolor=lightgrey>
+            <tr>
+                <td width=150>Bank Account No:</td>
+                <td><input name="accNum" type="text" id="accNum" value="12345" width="100"></input>
+                </td>
+                <tr>
+                    <td colspan=2 align=middle>
+                        </input>
+                        <input type="submit" name="submit" value="check"></td>
+
+        </table>
+    </form>
+</body>
+
+</html>
